@@ -1,6 +1,6 @@
 module mux(input[3:0] in0, in1,
-			  input sel,
-			  output reg[3:0] out);
+	   input sel,
+	   output reg[3:0] out);
 
 always @(*)
 	case (sel)
