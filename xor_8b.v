@@ -1,5 +1,5 @@
 module nor(input[7:0] in1, in2,
-	         input e,
+	   input e,
            output reg[7:0] out);
 
 always @(*)
