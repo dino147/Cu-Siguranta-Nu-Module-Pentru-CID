@@ -6,7 +6,6 @@ module cmp (input[3:0] a,  b,
         lt = 0;
         eq = 0;
         gt = 0;
-        
         if (a < b) lt = 1;
             else if (a > b) gt = 1;
         else eq = 1;    
