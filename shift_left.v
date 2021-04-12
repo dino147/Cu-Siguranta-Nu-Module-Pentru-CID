@@ -6,4 +6,5 @@ module shift_left (input [7:0] in1,
 always @(*)
 	if (e) out = in1 << in2;
 	else out = 0;
+	
 endmodule
