@@ -1,5 +1,5 @@
 module comp_mux(input[3:0] a, b,
-			      	  output reg[3:0] min, max);
+		output reg[3:0] min, max);
 				  
 				  
 always @(*)
