@@ -12,8 +12,12 @@ not p1 (w1, A);
 nor p2 (w2, B, C);
 and p3 (en , w1, w2);
 
-dmux DMUX (.en(en), .sel(SEL1), .out(w3));
+dmux DMUX (.en(en),
+           .sel(SEL1),
+           .out(w3));
 
-mux MUX (.in(w3), .sel(SEL2), .y(out_nume));
+mux MUX (.in(w3),
+         .sel(SEL2),
+         .y(out_nume));
 
 endmodule
