@@ -1,6 +1,7 @@
 module top (input A,
             input B,
             input C,
+                input D,
             input [1:0] SEL1,
             input [1:0] SEL2,
             output out_nume);
@@ -14,7 +15,7 @@ or p2 (sauout, A, notB);
 
 not p3 (notC, C);
 
-nand p4 (nandout , notC, B);
+nand p4 (nandout , notC, D);
 
 xor p5 (en, nandout, sauout);
 
