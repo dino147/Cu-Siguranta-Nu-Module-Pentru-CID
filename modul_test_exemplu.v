@@ -1,4 +1,4 @@
-module test_bcdsum_cristea();
+module test_bcdsum();
 
    reg     [3:0]    a0_sig;
    reg     [3:0]    b0_sig;
@@ -8,7 +8,7 @@ module test_bcdsum_cristea();
    wire    [3:0]    s1_sig;
    wire             s2_sig;
 
-   bcdsum_cristea DUT(.a0(a0_sig),
+   bcdsum DUT(.a0(a0_sig),
                       .b0(b0_sig),
                       .a1(a1_sig),
                       .b1(b1_sig),
