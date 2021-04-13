@@ -1,4 +1,5 @@
-module grey(input [2:0]in, output reg[2:0] g);
+module grey(input [2:0]in,
+	    output reg[2:0] g);
 									
 									
 always @(*)
