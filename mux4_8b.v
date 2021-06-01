@@ -1,5 +1,5 @@
 module mux(input[7:0] in0, in1, in2, in3,
-           input sel,
+           input[1:0] sel,
            output reg[7:0] out);
            
 always @(*)
