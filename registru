@@ -1,0 +1,19 @@
+module registru ( input in,
+									input ck,
+									input reset,
+									input enable,
+									output reg Q) ;
+
+
+// registru
+always @ (negedge ck) begin
+
+	if(reset) Q <= 0;		// reset activ pe 1
+		else if (enable) Q <= in ; 
+					else 	  Q <= Q ; 
+
+end 	
+
+							
+
+endmodule 
