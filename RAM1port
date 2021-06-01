@@ -1,0 +1,23 @@
+module RAM_cojocaru (input [7:0] dataIn,
+							input [6:0] adr,
+							input ck,
+							input we,
+							output [7:0] dataOut);
+							
+							
+reg [7:0] mem [0:127];
+
+
+// memorie cu 1 port
+
+// scrierea in memorie
+always @(posedge ck)
+	
+	if(!we) mem[adr] <= dataIn;
+	
+
+// citirea din memorie	
+assign dataOut = mem[adr];
+
+
+endmodule 
