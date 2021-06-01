@@ -1,10 +1,10 @@
 module numarator(input ck,
-					  input reset,
-					  input load,
-					  input en,
-					  input UpDown,
-					  input [4:0] in,
-					  output reg [4:0] out);
+                 input reset,
+                 input load,
+		 input en,
+		 input UpDown,
+		 input [4:0] in,
+		 output reg [4:0] out);
 
 
 always @(posedge ck)
