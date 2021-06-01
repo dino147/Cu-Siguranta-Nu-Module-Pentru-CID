@@ -24,7 +24,7 @@ integer i;
 
 initial begin
 
-	 #1 {reset, load, en, UpDown} = 4'b1000;
+	 DUT.out = 0;
      
 end
 
