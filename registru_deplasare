@@ -1,0 +1,23 @@
+module registru_deplasare (input [7:0]Din, input enable, input ck, input SI, input load,  output reg [7:0]Dout);
+
+
+reg [7:0]tmp;
+
+always @ (negedge ck)
+
+	if(load) begin
+	tmp=Din;
+	Dout = tmp;
+	end
+	else if(enable) begin
+	
+			tmp = tmp<<1;
+			tmp[0]=SI;
+			Dout=tmp;
+			
+			end
+			else Dout=Dout;
+			
+			
+	
+endmodule
