@@ -1,8 +1,8 @@
 module registru(input in,
-					 input ck,			
-					 input reset,
-					 input enable,
-					 output reg Q) ;
+		input ck,			
+		input reset,
+		input enable,
+		output reg Q) ;
 
 
 
